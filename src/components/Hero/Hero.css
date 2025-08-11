@@ -149,57 +149,46 @@
     color: #ffa500;
 }
 
-/* Responsive design for food category panel */
-@media (max-width: 1024px) {
-    .video-container h2 {
-        font-size: 3.2rem;
-        letter-spacing: 1.8px;
-        max-width: 420px;
-    }
-    
-    .video-container p {
-        font-size: 1.4rem;
-        max-width: 380px;
-    }
-    
-    .food-category {
-        gap: 30px;
-        padding: 25px 35px;
-    }
-    
-    .food-category-card img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .food-category-card h3 {
-        font-size: 1rem;
-    }
-}
 
 @media (max-width: 768px) {
     .video-container h2 {
         font-size: 2.8rem;
         letter-spacing: 1.5px;
-        top: 25%;
+        top: 50%;
         left: 5%;
         max-width: 350px;
     }
     
     .video-container p {
-        font-size: 1.3rem;
-        max-width: 320px;
-        top: 40%;
-        left: 5%;
+        display: none;
     }
     
     .food-category {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start; /* start from the first card */
+        position: absolute;
         top: 75%;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 20px 25px;
-        width: 90%;
-        max-width: 500px;
+        left: 0;            
+        right: 0;
+        transform: none;
+        flex-wrap: nowrap;
+        gap: 16px;
+        padding: 16px 12px; 
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x proximity; /* smooth horizontal snap */
+        -webkit-overflow-scrolling: touch; 
+    }
+    
+    
+    .food-category-card {
+        flex-shrink: 0;
+        min-width: 120px;
+        scroll-snap-align: start;
     }
     
     .food-category-card img {
@@ -210,39 +199,5 @@
     .food-category-card h3 {
         font-size: 0.9rem;
         margin-top: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .video-container h2 {
-        font-size: 2.2rem;
-        letter-spacing: 1px;
-        top: 20%;
-        left: 5%;
-        max-width: 280px;
-    }
-    
-    .video-container p {
-        font-size: 1.1rem;
-        max-width: 270px;
-        top: 35%;
-        letter-spacing: 0.5px;
-        left: 5%;
-    }
-    
-    .food-category {
-        top: 80%;
-        gap: 15px;
-        padding: 15px 20px;
-    }
-    
-    .food-category-card img {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .food-category-card h3 {
-        font-size: 0.8rem;
-        margin-top: 8px;
     }
 }

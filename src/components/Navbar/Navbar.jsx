@@ -1,10 +1,12 @@
 import "./Navbar.css";
 import React from 'react'
 import logo from '../../assets/logo.png';
+import './navScript.js';
 
 const Navbar = () => {
   
     return (
+
     <div className="navbar">
         <div className="navbar-logo">
             <img src={logo} alt="Logo"/>
@@ -15,6 +17,7 @@ const Navbar = () => {
                         marginRight: "20px",
                     }}>Sign-In</li>
         </ul>
+
     </div>
   )
 }
