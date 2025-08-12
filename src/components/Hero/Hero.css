@@ -202,9 +202,24 @@
     }
 
 
-    #active{
-    transform: none !important;
-    border: 4px solid rgb(255, 165, 0);
-    box-shadow: 0 6px 25px rgba(255, 165, 0, 0.6);
-}
+      
+    #active {
+        transform: scale(1.05);
+        outline: 3px solid rgb(255, 165, 0); 
+        outline-offset: 2px;
+        box-shadow: 0 6px 25px rgba(255, 165, 0, 0.6);
+        border: 3px solid rgba(255, 255, 255, 0.2);
+    }
+
+    #active h3 {
+        color: #ffa500;
+        transform: scale(1.05);
+    }
+
+    .food-category::-webkit-scrollbar {
+    display: none; /* works in some browsers, but not all */
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    }
 }
