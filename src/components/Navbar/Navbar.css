@@ -89,18 +89,19 @@
     
    .navbar {
         width: 80%;
-        height: 10%;
+        height: 90px;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 5px;
     }
 
     .navbar-logo img {
-        position: absolute;
-        top: -100px;
-        left: 35px;
-
-
-        width: 280px;
+        width: 300px;
         height: auto;
+    }
+
+    .navbar-links{
+        display: none;
     }
 }
