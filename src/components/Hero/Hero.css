@@ -204,7 +204,7 @@
 
       
     #active {
-        transform: scale(1.05);
+        transform: none !important;
         outline: 3px solid rgb(255, 165, 0); 
         outline-offset: 2px;
         box-shadow: 0 6px 25px rgba(255, 165, 0, 0.6);
@@ -213,7 +213,7 @@
 
     #active h3 {
         color: #ffa500;
-        transform: scale(1.05);
+        transform: none !important;
     }
 
     .food-category::-webkit-scrollbar {
