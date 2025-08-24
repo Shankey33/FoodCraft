@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   base: '/FoodCraft/', 
   build: {
-    outDir: 'docs'} 
+    outDir: 'build'} 
 })
